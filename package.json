@@ -1,7 +1,15 @@
 {
+  "scripts": {
+    "migrate": "npx sequelize-cli db:migrate"
+  },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "input": "^1.0.1",
+    "mysql2": "^3.11.0",
     "qrcode-decoder": "^0.3.4",
+    "sequelize": "^6.37.3",
+    "sequelize-paginate": "^1.1.6",
     "telegram": "^2.24.11"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"

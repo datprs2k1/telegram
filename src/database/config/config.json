@@ -1,0 +1,32 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "telegram",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "logging": false,
+    "timezone": "+07:00",
+    "pool": {
+      "max": 10000,
+      "min": 10,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": "",
+    "database": "telegram",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "logging": false,
+    "timezone": "+07:00",
+    "pool": {
+      "max": 10000,
+      "min": 10,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  }
+}
