@@ -4,7 +4,11 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
     "input": "^1.0.1",
     "mysql2": "^3.11.0",
     "qrcode-decoder": "^0.3.4",
