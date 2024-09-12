@@ -29,8 +29,8 @@ const stringSession = new StringSession(); // fill this later with the value fro
       },
       defaults: {
         username: account.username,
-        firstName: account.firstName,
-        lastName: account.lastName,
+        firstName: account.firstName || '',
+        lastName: account.lastName || '',
         phone: account.phone,
         string_session: client.session.save(),
       },

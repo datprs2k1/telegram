@@ -1,0 +1,226 @@
+2024-09-06 11:22:25: Listening on 1910
+2024-09-06 11:23:23: Listening on 1910
+2024-09-06 11:23:30: ConnectionRefusedError [SequelizeConnectionRefusedError]: connect ECONNREFUSED 127.0.0.1:3306
+    at ConnectionManager.connect (D:\www\telegram\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (D:\www\telegram\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async D:\www\telegram\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+    at async ConnectionManager.getConnection (D:\www\telegram\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:197:7)
+    at async D:\www\telegram\node_modules\sequelize\lib\sequelize.js:305:26
+    at async MySQLQueryInterface.select (D:\www\telegram\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Telegram.findAll (D:\www\telegram\node_modules\sequelize\lib\model.js:1140:21)
+    at async Telegram.findOne (D:\www\telegram\node_modules\sequelize\lib\model.js:1240:12)
+    at async Object.getCodeLogin [as action] (D:\www\telegram\src\controllers\TelegramController.js:14:17) {
+  parent: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3306,
+    fatal: true
+  },
+  original: Error: connect ECONNREFUSED 127.0.0.1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1607:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 3306,
+    fatal: true
+  }
+}
+2024-09-06 11:23:39: [33m[2024-09-06T11:23:39.397] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:23:39: [33m[2024-09-06T11:23:39.399] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:23:39: [33m[2024-09-06T11:23:39.474] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:23:39: [33m[2024-09-06T11:23:39.476] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:23:41: [35m[2024-09-06T11:23:41.506] [WARN] - [Disconnecting...][0m
+2024-09-06 11:23:41: [33m[2024-09-06T11:23:41.506] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:23:41: [33m[2024-09-06T11:23:41.508] [INFO] - [connection closed][0m
+2024-09-06 11:23:48: [35m[2024-09-06T11:23:48.639] [WARN] - [Disconnecting...][0m
+2024-09-06 11:23:48: [33m[2024-09-06T11:23:48.640] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:28:31: Listening on 1910
+2024-09-06 11:28:55: Listening on 1910
+2024-09-06 11:28:59: [33m[2024-09-06T11:28:59.682] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:28:59: [33m[2024-09-06T11:28:59.685] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:28:59: [33m[2024-09-06T11:28:59.755] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:28:59: [33m[2024-09-06T11:28:59.756] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:29:01: [35m[2024-09-06T11:29:01.464] [WARN] - [Disconnecting...][0m
+2024-09-06 11:29:01: [33m[2024-09-06T11:29:01.464] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:29:01: [33m[2024-09-06T11:29:01.464] [INFO] - [connection closed][0m
+2024-09-06 11:29:08: [35m[2024-09-06T11:29:08.914] [WARN] - [Disconnecting...][0m
+2024-09-06 11:29:08: [33m[2024-09-06T11:29:08.915] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:29:41: Listening on 1910
+2024-09-06 11:29:43: [33m[2024-09-06T11:29:43.627] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:29:43: [33m[2024-09-06T11:29:43.629] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:29:43: [33m[2024-09-06T11:29:43.707] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:29:43: [33m[2024-09-06T11:29:43.708] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:29:44: [35m[2024-09-06T11:29:44.990] [WARN] - [Disconnecting...][0m
+2024-09-06 11:29:44: [33m[2024-09-06T11:29:44.990] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:29:44: 45734
+2024-09-06 11:29:44: [33m[2024-09-06T11:29:44.991] [INFO] - [connection closed][0m
+2024-09-06 11:29:52: [35m[2024-09-06T11:29:52.883] [WARN] - [Disconnecting...][0m
+2024-09-06 11:29:52: [33m[2024-09-06T11:29:52.884] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:30:34: Listening on 1910
+2024-09-06 11:30:36: [33m[2024-09-06T11:30:36.428] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:30:36: [33m[2024-09-06T11:30:36.432] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:30:36: [33m[2024-09-06T11:30:36.509] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:30:36: [33m[2024-09-06T11:30:36.510] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:30:37: [35m[2024-09-06T11:30:37.973] [WARN] - [Disconnecting...][0m
+2024-09-06 11:30:37: [33m[2024-09-06T11:30:37.973] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:30:37: 45734
+2024-09-06 11:30:37: [33m[2024-09-06T11:30:37.974] [INFO] - [connection closed][0m
+2024-09-06 11:30:45: [35m[2024-09-06T11:30:45.681] [WARN] - [Disconnecting...][0m
+2024-09-06 11:30:45: [33m[2024-09-06T11:30:45.681] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:30:55: Listening on 1910
+2024-09-06 11:30:56: [33m[2024-09-06T11:30:56.792] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:30:56: [33m[2024-09-06T11:30:56.796] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:30:56: [33m[2024-09-06T11:30:56.871] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:30:56: [33m[2024-09-06T11:30:56.871] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:30:58: [35m[2024-09-06T11:30:58.207] [WARN] - [Disconnecting...][0m
+2024-09-06 11:30:58: [33m[2024-09-06T11:30:58.207] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:30:58: 45734
+2024-09-06 11:30:58: [33m[2024-09-06T11:30:58.208] [INFO] - [connection closed][0m
+2024-09-06 11:31:06: [35m[2024-09-06T11:31:06.041] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:06: [33m[2024-09-06T11:31:06.042] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:11: Listening on 1910
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.241] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:31:13: undefined
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.246] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.320] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.320] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.788] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:31:13: undefined
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.789] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.867] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:31:13: [33m[2024-09-06T11:31:13.867] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:31:14: [35m[2024-09-06T11:31:14.900] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:14: [33m[2024-09-06T11:31:14.900] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:14: 45734
+2024-09-06 11:31:14: [33m[2024-09-06T11:31:14.901] [INFO] - [connection closed][0m
+2024-09-06 11:31:15: [35m[2024-09-06T11:31:15.422] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:15: [33m[2024-09-06T11:31:15.423] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:15: 45734
+2024-09-06 11:31:15: [33m[2024-09-06T11:31:15.423] [INFO] - [connection closed][0m
+2024-09-06 11:31:22: [35m[2024-09-06T11:31:22.528] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:22: [33m[2024-09-06T11:31:22.529] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:23: [35m[2024-09-06T11:31:23.038] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:23: [33m[2024-09-06T11:31:23.039] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:26: [33m[2024-09-06T11:31:26.252] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:31:26: undefined
+2024-09-06 11:31:26: [33m[2024-09-06T11:31:26.254] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:26: [33m[2024-09-06T11:31:26.335] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:31:26: [33m[2024-09-06T11:31:26.336] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:31:27: [35m[2024-09-06T11:31:27.642] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:27: [33m[2024-09-06T11:31:27.642] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:27: 45734
+2024-09-06 11:31:27: [33m[2024-09-06T11:31:27.642] [INFO] - [connection closed][0m
+2024-09-06 11:31:35: [35m[2024-09-06T11:31:35.512] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:35: [33m[2024-09-06T11:31:35.512] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:41: Listening on 1910
+2024-09-06 11:31:44: [33m[2024-09-06T11:31:44.995] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:31:44: AAAAAA undefined
+2024-09-06 11:31:44: [33m[2024-09-06T11:31:44.999] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:45: [33m[2024-09-06T11:31:45.081] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:31:45: [33m[2024-09-06T11:31:45.081] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:31:46: [35m[2024-09-06T11:31:46.691] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:46: [33m[2024-09-06T11:31:46.691] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:46: 45734
+2024-09-06 11:31:46: [33m[2024-09-06T11:31:46.692] [INFO] - [connection closed][0m
+2024-09-06 11:31:48: [33m[2024-09-06T11:31:48.757] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:31:48: AAAAAA undefined
+2024-09-06 11:31:48: [33m[2024-09-06T11:31:48.761] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:48: [33m[2024-09-06T11:31:48.842] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:31:48: [33m[2024-09-06T11:31:48.843] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:31:50: [35m[2024-09-06T11:31:50.355] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:50: [33m[2024-09-06T11:31:50.355] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:50: 45734
+2024-09-06 11:31:50: [33m[2024-09-06T11:31:50.356] [INFO] - [connection closed][0m
+2024-09-06 11:31:54: [35m[2024-09-06T11:31:54.295] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:54: [33m[2024-09-06T11:31:54.296] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:31:58: [35m[2024-09-06T11:31:58.017] [WARN] - [Disconnecting...][0m
+2024-09-06 11:31:58: [33m[2024-09-06T11:31:58.018] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:32:50: Listening on 1910
+2024-09-06 11:32:55: [33m[2024-09-06T11:32:55.098] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:32:55: AAAAAA undefined
+2024-09-06 11:32:55: [33m[2024-09-06T11:32:55.102] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:32:55: [33m[2024-09-06T11:32:55.171] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:32:55: [33m[2024-09-06T11:32:55.172] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:32:56: [35m[2024-09-06T11:32:56.519] [WARN] - [Disconnecting...][0m
+2024-09-06 11:32:56: [33m[2024-09-06T11:32:56.519] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:32:56: [33m[2024-09-06T11:32:56.520] [INFO] - [connection closed][0m
+2024-09-06 11:33:04: [35m[2024-09-06T11:33:04.331] [WARN] - [Disconnecting...][0m
+2024-09-06 11:33:04: [33m[2024-09-06T11:33:04.332] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:34:22: Listening on 1910
+2024-09-06 11:34:26: [33m[2024-09-06T11:34:26.082] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:34:26: [33m[2024-09-06T11:34:26.085] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:34:26: [33m[2024-09-06T11:34:26.160] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:34:26: [33m[2024-09-06T11:34:26.160] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:34:27: [35m[2024-09-06T11:34:27.777] [WARN] - [Disconnecting...][0m
+2024-09-06 11:34:27: [33m[2024-09-06T11:34:27.777] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:34:27: AAAAAA undefined
+2024-09-06 11:34:27: [33m[2024-09-06T11:34:27.780] [INFO] - [connection closed][0m
+2024-09-06 11:34:33: [33m[2024-09-06T11:34:33.412] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:34:33: [33m[2024-09-06T11:34:33.412] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:34:33: [33m[2024-09-06T11:34:33.487] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:34:33: [33m[2024-09-06T11:34:33.488] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:34:34: [35m[2024-09-06T11:34:34.620] [WARN] - [Disconnecting...][0m
+2024-09-06 11:34:34: [33m[2024-09-06T11:34:34.620] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:34:34: AAAAAA undefined
+2024-09-06 11:34:34: [33m[2024-09-06T11:34:34.622] [INFO] - [connection closed][0m
+2024-09-06 11:34:35: [35m[2024-09-06T11:34:35.372] [WARN] - [Disconnecting...][0m
+2024-09-06 11:34:35: [33m[2024-09-06T11:34:35.373] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:34:42: [35m[2024-09-06T11:34:42.645] [WARN] - [Disconnecting...][0m
+2024-09-06 11:34:42: [33m[2024-09-06T11:34:42.646] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:43:39: Listening on 1910
+2024-09-06 11:43:43: [33m[2024-09-06T11:43:43.898] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:43:43: [33m[2024-09-06T11:43:43.900] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:43:43: [33m[2024-09-06T11:43:43.970] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:43:43: [33m[2024-09-06T11:43:43.971] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:43:45: [35m[2024-09-06T11:43:45.270] [WARN] - [Disconnecting...][0m
+2024-09-06 11:43:45: [33m[2024-09-06T11:43:45.271] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:43:45: 45734
+2024-09-06 11:43:45: [33m[2024-09-06T11:43:45.274] [INFO] - [connection closed][0m
+2024-09-06 11:43:53: [35m[2024-09-06T11:43:53.140] [WARN] - [Disconnecting...][0m
+2024-09-06 11:43:53: [33m[2024-09-06T11:43:53.141] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:48:21: [33m[2024-09-06T11:48:21.701] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 11:48:21: [33m[2024-09-06T11:48:21.704] [INFO] - [Connecting to 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:48:21: [33m[2024-09-06T11:48:21.781] [INFO] - [Connection to 91.108.56.193:80/TCPFull complete!][0m
+2024-09-06 11:48:21: [33m[2024-09-06T11:48:21.781] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 11:48:23: [35m[2024-09-06T11:48:23.503] [WARN] - [Disconnecting...][0m
+2024-09-06 11:48:23: [33m[2024-09-06T11:48:23.504] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 11:48:23: 45734
+2024-09-06 11:48:23: [33m[2024-09-06T11:48:23.506] [INFO] - [connection closed][0m
+2024-09-06 11:48:30: [35m[2024-09-06T11:48:30.950] [WARN] - [Disconnecting...][0m
+2024-09-06 11:48:30: [33m[2024-09-06T11:48:30.950] [INFO] - [Disconnecting from 91.108.56.193:80/TCPFull...][0m
+2024-09-06 15:02:03: Listening on 1910
+2024-09-06 15:02:05: [33m[2024-09-06T15:02:05.361] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 15:02:05: [33m[2024-09-06T15:02:05.363] [INFO] - [Connecting to 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:02:05: [33m[2024-09-06T15:02:05.625] [INFO] - [Connection to 149.154.175.51:80/TCPFull complete!][0m
+2024-09-06 15:02:05: [33m[2024-09-06T15:02:05.626] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 15:02:06: [35m[2024-09-06T15:02:06.818] [WARN] - [Disconnecting...][0m
+2024-09-06 15:02:06: [33m[2024-09-06T15:02:06.819] [INFO] - [Disconnecting from 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:02:06: 84538
+2024-09-06 15:02:06: [33m[2024-09-06T15:02:06.822] [INFO] - [connection closed][0m
+2024-09-06 15:02:15: [35m[2024-09-06T15:02:15.169] [WARN] - [Disconnecting...][0m
+2024-09-06 15:02:15: [33m[2024-09-06T15:02:15.169] [INFO] - [Disconnecting from 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:03:44: [33m[2024-09-06T15:03:44.308] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 15:03:44: [33m[2024-09-06T15:03:44.309] [INFO] - [Connecting to 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:03:44: [33m[2024-09-06T15:03:44.573] [INFO] - [Connection to 149.154.175.51:80/TCPFull complete!][0m
+2024-09-06 15:03:44: [33m[2024-09-06T15:03:44.574] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 15:03:45: [35m[2024-09-06T15:03:45.991] [WARN] - [Disconnecting...][0m
+2024-09-06 15:03:45: [33m[2024-09-06T15:03:45.991] [INFO] - [Disconnecting from 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:03:45: 75665
+2024-09-06 15:03:45: [33m[2024-09-06T15:03:45.992] [INFO] - [connection closed][0m
+2024-09-06 15:03:54: [35m[2024-09-06T15:03:54.115] [WARN] - [Disconnecting...][0m
+2024-09-06 15:03:54: [33m[2024-09-06T15:03:54.115] [INFO] - [Disconnecting from 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:04:12: [33m[2024-09-06T15:04:12.598] [INFO] - [Running gramJS version 2.24.10][0m
+2024-09-06 15:04:12: [33m[2024-09-06T15:04:12.598] [INFO] - [Connecting to 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:04:12: [33m[2024-09-06T15:04:12.862] [INFO] - [Connection to 149.154.175.51:80/TCPFull complete!][0m
+2024-09-06 15:04:12: [33m[2024-09-06T15:04:12.863] [INFO] - [Using LAYER 184 for initial connect][0m
+2024-09-06 15:04:14: [35m[2024-09-06T15:04:14.095] [WARN] - [Disconnecting...][0m
+2024-09-06 15:04:14: [33m[2024-09-06T15:04:14.096] [INFO] - [Disconnecting from 149.154.175.51:80/TCPFull...][0m
+2024-09-06 15:04:14: 75665
+2024-09-06 15:04:14: [33m[2024-09-06T15:04:14.096] [INFO] - [connection closed][0m
+2024-09-06 15:04:22: [35m[2024-09-06T15:04:22.401] [WARN] - [Disconnecting...][0m
+2024-09-06 15:04:22: [33m[2024-09-06T15:04:22.401] [INFO] - [Disconnecting from 149.154.175.51:80/TCPFull...][0m
