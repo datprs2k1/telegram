@@ -21,22 +21,7 @@ const stringSession = new StringSession(); // fill this later with the value fro
     });
     console.log('You should now be connected.');
 
-    let account = await client.getMe();
-
-    let entry = await Telegram.findOrCreate({
-      where: {
-        uid: account.id,
-      },
-      defaults: {
-        username: account.username,
-        firstName: account.firstName || '',
-        lastName: account.lastName || '',
-        phone: account.phone,
-        string_session: client.session.save(),
-      },
-    });
-
-    console.log('Connected as', entry);
+    console.log(client.session.save());
   } catch (err) {
     console.log(err);
   }
