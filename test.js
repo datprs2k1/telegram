@@ -10,9 +10,39 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const apiId = process.env.API_ID;
 const apiHash = process.env.API_HASH;
 const telegramToken = process.env.TELEGRAM_TOKEN;
-const telegramGroup = process.env.TELEGRAM_GROUP;
 const discordToken = process.env.DISCORD_TOKEN;
-const discordServer = process.env.DISCORD_CHANNEL;
+
+let data = [
+  {
+    id: '1350020887646306304',
+    name: 'btc-price',
+    groups: [-1001313788595],
+  },
+  {
+    id: '1350021705770209280',
+    name: 'eth-price',
+    groups: [-1001387716380],
+  },
+  {
+    id: '1350021787722846229',
+    name: 'sol-price',
+    groups: [-1002054516195],
+  },
+  {
+    id: '1350021919797284874',
+    name: 'box-liquid',
+    groups: [-1001407057468],
+  },
+  {
+    id: '1341117151347474566',
+    name: 'box-dump-pumps',
+    groups: [-1001245027408],
+  },
+];
+
+let chats = data.map((item) => item.groups).flat();
+
+let discordServers = data.map((item) => item.id);
 
 const client = new TelegramClient(new StringSession(telegramToken), parseInt(apiId), apiHash);
 
@@ -20,12 +50,16 @@ const discord = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
 });
 
-let discordChannel;
+let discordChannels;
 
 discord.on('ready', async () => {
   console.log(`> Bot is on ready`);
-  const channel = await discord.channels.fetch(discordServer);
-  discordChannel = channel;
+  discordChannels = await Promise.all(
+    discordServers.map(async (server) => {
+      const channel = await discord.channels.fetch(server);
+      return channel;
+    })
+  );
 });
 
 discord.login(discordToken);
@@ -35,7 +69,7 @@ discord.login(discordToken);
   client.addEventHandler(
     eventPrint,
     new NewMessage({
-      chats: [-1001245027408, -1001231213931, -1002201155722, -4601538298],
+      chats,
     })
   );
 })();
@@ -43,6 +77,12 @@ discord.login(discordToken);
 async function eventPrint(event) {
   const message = event.message;
   const media = message.media;
+
+  let group = chats.find((item) => item.toString().includes(Number(message.chat.id)));
+
+  let discordChannelId = data.find((item) => item.groups.includes(group)).id;
+
+  const discordChannel = discordChannels.find((channel) => channel.id === discordChannelId);
 
   if (media) {
     const buffer = await client.downloadMedia(media);
